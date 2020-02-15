@@ -158,18 +158,18 @@
 
 // switch case
 
-$siswa = 'tio';
-$status = 'hadir';
+// $siswa = 'tio';
+// $status = 'hadir';
 
-if($status == 'hadir'){
-    echo $siswa.' siswa ini hadir';
-}else if($status == 'ijin'){
-    echo $siswa.' siswa ini ijin';
-}else if($status == 'sakit'){
-    echo $siswa.' siswa ini sakit ';
-}else{
-    echo $siswa.' siswa ini tidak hadir ';
-}
+// if($status == 'hadir'){
+//     echo $siswa.' siswa ini hadir';
+// }else if($status == 'ijin'){
+//     echo $siswa.' siswa ini ijin';
+// }else if($status == 'sakit'){
+//     echo $siswa.' siswa ini sakit ';
+// }else{
+//     echo $siswa.' siswa ini tidak hadir ';
+// }
 
 // kerangka dasar if
 
@@ -188,18 +188,100 @@ if($status == 'hadir'){
 //     break;
 // }
 
-switch($status){
-    case 'hadir' :
-        echo $siswa.' siswa ini hadir';
-        echo "";
-        break;
-    case 'ijin' :
-        echo $siswa.' siswa ini ijin';
-        break;
-    case 'sakit' :
-        echo $siswa.' siswa ini sakit ';
-        break;
-    default :
-        echo $siswa.' siswa ini tidak hadir ';
-        break;
-}
+// switch($status){
+//     case 'hadir' :
+//         echo $siswa.' siswa ini hadir';
+//         echo "";
+//         break;
+//     case 'ijin' :
+//         echo $siswa.' siswa ini ijin';
+//         break;
+//     case 'sakit' :
+//         echo $siswa.' siswa ini sakit ';
+//         break;
+//     default :
+//         echo $siswa.' siswa ini tidak hadir ';
+//         break;
+// }
+
+
+// Aritmatika
+
+// $nilai = 5;
+
+// increment
+// $nilai = $nilai + 1;
+// $nilai += 3;
+// $nilai++; 
+// $nilai++;
+// $nilai++;
+// echo $nilai;
+
+//decrement
+// $nilai--; 
+// $nilai--;
+// $nilai--;
+
+// % = modulus
+// $modulus = 6 % 10;
+// $modulus =  ( 2 +  5 ) * 5;
+// echo $modulus;
+
+// $nilai = 10;
+// $total = 2 -  $nilai * ( 2  / 2 ) ;
+// echo $modulus;
+
+
+// for loop
+
+// rumus dasar
+// for($i; $i < $total; $i++){
+//     echo;
+// }
+
+// $jumlah = 11;
+// for( $i = 1; $i <= $jumlah; $i +=3 ){
+//     echo "hello world".$i.'<br>';
+// }
+
+// $siswa = ['doni', 'rio', 'lina','desi','iqbal'];
+
+// for($i = 0; $i < count($siswa); $i+=2 ){
+//     echo $siswa[$i].'<br>';
+// }
+
+// $siswa = "";
+// $siswa += 1;
+// echo $siswa;
+
+// if( $siswa ){
+//     echo "ini benar";
+// }else{
+//     echo "ini salah";
+// }
+
+
+// while
+
+// infinity loop
+// while(true){
+//     echo "hello world";
+// }
+
+//perulangan while
+// $start = 1;
+// $end = 10;
+
+// $jumlah = 1;
+// while( $start <= $end ){
+//     echo $start." hello world".'<br>';
+
+//     $start+= $jumlah;
+//     $start++;
+// }
+
+// perulangan do while
+// do{
+//     echo $start.'selesai'.'<br>';
+//     $start++;
+// }while($start <= $end);
