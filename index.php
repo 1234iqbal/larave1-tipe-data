@@ -285,3 +285,133 @@
 //     echo $start.'selesai'.'<br>';
 //     $start++;
 // }while($start <= $end);
+
+// perulangan foreach
+
+// perulangan array
+// $karyawanIwan = ['hario', 'rehan' , 'joko', 'budi'];
+
+// foreach($karyawan as $karyawans){
+//     echo $karyawans. '<br>';
+// }
+
+//perulangan array di dalam array
+// $karyawan = [
+//     ['name' => 'hario'],
+//     ['name' => 'rehan'],
+//     ['name' => 'joko'],
+//     ['name' => 'budi']
+// ];
+
+// foreach($karyawan as $karyawans){
+//     echo $karyawans['name']. '<br>';
+// }
+
+// $karyawan = [
+//     [
+//         'name' => 'hario',
+//         'age'  => 26,
+//         'job'  => [ 
+//                 [ 'pekerjaan1' => 'developer'] ,
+//                 [ 'pekerjaan2' => 'OB'] 
+//             ]
+//         ],
+//     [
+//         'name' => 'rehan',
+//         'age'  => 23,
+//         'job'  => [ 
+//                 [ 'pekerjaan1' => 'developer'] ,
+//                 [ 'pekerjaan2' => 'OB'] 
+//             ]
+//     ],
+//     [
+//         'name' => 'joko',
+//         'age'  => 28,
+//         'job'  => [ 
+//                 [ 'pekerjaan1' => 'developer'] ,
+//                 [ 'pekerjaan2' => 'OB'] 
+//             ]
+//     ]
+// ];
+
+// foreach($karyawan as $key => $karyawans){
+//     echo $key+=1;
+//     echo $karyawans['name']. '<br>';
+//     echo $karyawans['age']. '<br>';
+//     foreach( $karyawans['job'] as $job){
+//         echo $job['pekerjaan1']."<br>";
+//         break;
+//     }
+// }
+
+
+// breaking
+// $karyawan = ['hario', 'rehan' , 'joko', 'budi'];
+// $find = 'rehan';
+
+// foreach($karyawan as $karyawans){
+//     echo $karyawans. '<br>';
+//     if($karyawans == $find){
+//         break;
+//     }
+// }
+
+// // continue
+// $karyawan = ['hario', 'rehan' , 'joko', 'budi'];
+// $find = 'budi';
+
+// foreach($karyawan as $karyawans){
+//     if($karyawans == $find){
+//         continue;
+//     }
+//     echo $karyawans. '<br>';
+// }
+
+
+// dumping data
+
+// $siswa = ['tyo', 'rama', 'joko'];
+// echo "<pre>", var_dump($siswa) ,"</pre>";
+
+// function
+
+// function paket1(){
+//     echo 'nasi';
+// }
+
+// function paket2(){
+//     echo 'ayam';
+// }
+
+// echo paket1();
+
+// function dengan parameter / argument
+
+// function siswa($first_name){
+//     return $first_name;
+// }
+
+// echo siswa('jagung');
+// echo siswa('nasi');
+// echo siswa(); //error
+
+// function dengan option parameter
+
+// function paket1($nama = 'ayam'){
+//     return $nama;
+// }
+
+// echo paket1('donat');
+// echo paket1(); // berhasil
+
+// function di dalam function
+
+// function paket1(){
+//     return "nasi goreng";
+// }
+
+// function paket2($paket){
+//     return ' babat '.$paket;
+// }
+
+// echo paket2(paket1());
